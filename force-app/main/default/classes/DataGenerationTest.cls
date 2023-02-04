@@ -1,5 +1,7 @@
 @isTest
 private class DataGenerationTest {
+
+    // this is test method 
     @testSetup
     static void dataCreation() {
         Account account = TestFactory.getAccount('Muddy Waters Inc.', true);
@@ -11,6 +13,8 @@ private class DataGenerationTest {
         opp.StageName = 'Prospecting';
         insert opp;
     }
+
+    // this is another test method 
     @isTest
     static void testBruteForceAccountCreation() {
         List<Account> accts = new List<Account>();
